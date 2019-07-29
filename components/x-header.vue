@@ -113,8 +113,15 @@ export default {
                     &:last-child{
                         position:relative;
                         padding-left: 20px;
-                        &::before{
+                        &:before{
                             position: absolute;
+                            content: "";
+                            width:1px;
+                            background:black;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 10px;
+                            height: 70%;
                         }
                         // border-left: 1px solid #f1f1f1;
                     }
